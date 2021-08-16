@@ -1,5 +1,5 @@
 ---
-title: "R Notebook"
+title: "R Notebook 2nd commit"
 output: html_notebook
 ---
 ```{r setup}
@@ -20,7 +20,7 @@ This is the data viz
 
 ```{r}
 simulated_patient_data %>%
- filter(birthdate >= "1965-01-28" & birthdate <= "2020-11-09") %>%
+ filter(birthdate >= "1975-01-28" & birthdate <= "2020-11-09") %>%
  ggplot() +
  aes(x = race, fill = gender) +
  geom_bar() +
@@ -31,6 +31,6 @@ simulated_patient_data %>%
 This is the interactive database
 
 ```{r}
-
+p <= ggplot(data = diamonds, aex(x=cut, fill=clarity))
 ```
 
