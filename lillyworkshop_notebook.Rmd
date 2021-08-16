@@ -1,0 +1,36 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r setup}
+library(tidyverse)
+library(ggplot2)
+library(plotly)
+```
+
+This is the import process
+
+```{r}
+library(readr)
+simulated_patient_data = read_csv("https://github.com/philbowsher/Foundation-of-the-R-Workflow-workshop-2019-09-06/raw/master/Examples/data/simulated_patient_data.csv")
+simulated_patient_data
+```
+
+This is the data viz
+
+```{r}
+simulated_patient_data %>%
+ filter(birthdate >= "1965-01-28" & birthdate <= "2020-11-09") %>%
+ ggplot() +
+ aes(x = race, fill = gender) +
+ geom_bar() +
+ scale_fill_hue() +
+ theme_minimal()
+```
+
+This is the interactive database
+
+```{r}
+
+```
+
