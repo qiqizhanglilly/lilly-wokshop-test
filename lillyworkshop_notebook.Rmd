@@ -16,7 +16,7 @@ simulated_patient_data = read_csv("https://github.com/philbowsher/Foundation-of-
 simulated_patient_data
 ```
 
-This is the data viz.
+This is the data viz
 
 ```{r}
 simulated_patient_data %>%
